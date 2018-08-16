@@ -1,15 +1,24 @@
-<div id='bg'>
-  <div class='row'>
-    <div class='col col-sm-3 text-center'><i class="fas fa-truck"></i></div>
-    <div class='col'>
-      <h3>{{ truck.name }}</h3>
-      <h6>Style: {{ truck.style }}</h6>
-      <h6>Average rating: </h6>
-    </div>
-    <div class='col col-sm-3'>
-      <button class='btn btn-info'>edit</button>
-      <button class='btn btn-success'>review</button>
+<div id='bg' class='my-2'>
+    <div class='row'>
+      <div class='col text-center pr-0'>
+        <i id='truck' class="fas fa-truck align-middle"></i>
+      </div>
+      <div class='col px-0 py-2'>
+        <h3>{{ truck.name }}</h3>
+        <h6>Style: {{ truck.style }}</h6>
+        <h6>Average rating: {{ truck.avgRating }}
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+        </h6>
+      </div>
+      <div class='col text-center'>
+        <div class='align'>
+          <button class='btn btn-info m-2 align-middle'>edit</button>
+          <button class='btn btn-success m-2 align-middle'>review</button>
+        </div>
+      </div>
     </div>
   </div>
-  
-</div>
