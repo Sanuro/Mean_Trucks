@@ -1,0 +1,10 @@
+div#bg{
+    background:#eee;
+    border: 2px solid black;
+}
+i{
+    transform: scale(2)
+}
+button{
+    transform: scale(.5)
+}
