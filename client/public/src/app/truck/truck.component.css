@@ -2,9 +2,10 @@ div#bg{
     background:#eee;
     border: 2px solid black;
 }
-i{
-    transform: scale(2)
+i#truck{
+    line-height: 100px;
+    transform: scale(3)
 }
-button{
-    transform: scale(.5)
+div.align{
+    line-height: 100px;
 }
