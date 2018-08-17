@@ -11,6 +11,7 @@ import { NewtruckComponent } from './newtruck/newtruck.component';
 import { EdittruckComponent } from './edittruck/edittruck.component';
 import { ReviewtruckComponent } from './reviewtruck/reviewtruck.component';
 import { TruckComponent } from './truck/truck.component';
+import { ReviewComponent } from './review/review.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TruckComponent } from './truck/truck.component';
     NewtruckComponent,
     EdittruckComponent,
     ReviewtruckComponent,
-    TruckComponent
+    TruckComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,

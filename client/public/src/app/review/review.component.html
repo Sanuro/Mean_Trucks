@@ -1,0 +1,18 @@
+<div *ngIf="rev != null" id='bg' class='my-2'>
+    <div class='row'>
+      <div class='col col-sm-3 text-center pr-0'>
+          <i id='truck' class="fas fa-user-circle"></i>
+          <p>{{ rev.name }}</p>
+      </div>
+      <div class='col col-sm-9 px-0 py-2'>
+        <h6>Review: {{ rev.review }}</h6>
+        <h6>Rating: {{ rev.rating }}
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+        </h6>
+      </div>
+    </div>
+  </div>

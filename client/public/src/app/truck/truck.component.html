@@ -16,8 +16,8 @@
       </div>
       <div class='col text-center'>
         <div class='align'>
-          <button class='btn btn-info m-2 align-middle'>edit</button>
-          <button class='btn btn-success m-2 align-middle'>review</button>
+          <button class='btn btn-info m-2 align-middle' [routerLink]="['edit', truck._id]">edit</button>
+          <button class='btn btn-success m-2 align-middle' [routerLink]="['review', truck._id]">review</button>
         </div>
       </div>
     </div>

@@ -1,3 +1,45 @@
-<p>
-  reviewtruck works!
-</p>
+<div *ngIf='foodtruck != null' id='bg' class='my-2'>
+    <div class='row'>
+      <div class='col text-center pr-0'>
+        <i id='truck' class="fas fa-truck align-middle"></i>
+      </div>
+      <div class='col px-0 py-2'>
+        <h3>{{ foodtruck.name }}</h3>
+        <h6>Style: {{ foodtruck.style }}</h6>
+        <h6>Average rating: {{ foodtruck.avgRating }}
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="far fa-star"></i>
+        </h6>
+      </div>
+    </div>
+  </div>
+<div *ngIf="foodtruck != null">
+<app-review *ngFor="let rev of foodtruck.review" [rev]="rev"></app-review>
+</div>
+<form (submit)="createReview(foodtruck._id)">
+  <div class="form-group">
+    <label>Name:</label>
+    <input type="text" class="form-control" name="newReview.name" [(ngModel)]="newReview.name">
+    <span *ngIf="error.name">{{error.name.message}}</span>
+  </div>
+  <div class="form-group">
+    <label>Review:</label>
+    <textarea class="form-control" name="newReview.review" [(ngModel)]="newReview.review"></textarea>
+    <span *ngIf="error.review">{{error.review.message}}</span>
+  </div>
+  <div class="form-group">
+      <label>Rating:</label>
+      <select class="form-control" name="newReview.rating" [(ngModel)]="newReview.rating">
+      <option value="5">🔥🔥🔥🔥🔥</option>
+      <option value="4">🔥🔥🔥🔥</option>
+      <option value="3">🔥🔥🔥</option>
+      <option value="2">🔥🔥</option>
+      <option value="1">🔥</option>
+      <option value="0">💩</option>
+      </select>
+    </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -3,8 +3,8 @@ div#bg{
     border: 2px solid black;
 }
 i#truck{
-    line-height: 100px;
-    transform: scale(3)
+    line-height: 50px;
+    transform: scale(2.5)
 }
 div.align{
     line-height: 100px;
